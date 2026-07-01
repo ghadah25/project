@@ -2,11 +2,6 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-# استبدلي الكلمات بين الأقواس ببيانات مستودعك والـ Token الخاص بك
-# (يمكنك الحصول على الـ Token من إعدادات جيت هاب Developer Settings -> Personal Access Tokens)
-TOKEN = "your_github_token_here"
-USERNAME = "YourGitHubUsername"
-REPO_NAME = "your-repo-name"
 
 # سحب المشروع داخل كولاب
 !git clone https://{TOKEN}@github.com{USERNAME}/{REPO_NAME}.git
