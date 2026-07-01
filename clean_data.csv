@@ -1,0 +1,267 @@
+Employee ID,Job Title,City,Experience Level,Years of Experience,Company,Salary,Date Hired
+1,Data Scientist,Dammam,mid-level,5,SABIC,13495,2024-03-20
+2,Data Scientist ,Jeddah,Senior,10,aramco,22034,2023-12-15
+3,DATA SCIENTIST,Riyadh,entry,5,Alrajhi Bank,5878,2020-09-13
+4,Data Analyst,Khobar,Executive,15,aramco,44734,2021-05-17
+5,Data Scientist ,Khobar,SENIOR,2,Tamimi,27390,2021-10-10
+6,Data Scientist ,Jeddah,Entry Level,7,SABIC,8798,2021-09-23
+7,software engineer ,Riyadh,Mid,4,NEOM,13028,2018-12-14
+8,ML Engineer,Dammam,Executive,5,NEOM,37161,2021-09-12
+9,Data Scientist,Riyadh,mid-level,2,Sabic ,16911,2024-03-12
+10,Data Analyst,Khobar,entry,3,NEOM,12721,2019-10-02
+11,Data Engineer,Dammam,entry,10,Tamimi,8099,2024-04-16
+12,Data Scientist ,Riyadh,Entry Level,5,Mobily,9014,2020-06-26
+13,Data Scientist,Dammam,Senior,3,SABIC,22502,2023-06-15
+14,DATA SCIENTIST,Riyadh,mid-level,15,Elm,17393,2018-09-21
+15,DATA SCIENTIST,Dammam,mid-level,8,NEOM,18700,2020-10-23
+16,ML Engineer,Dammam,mid-level,3,Sabic ,13275,2022-08-10
+17,DATA SCIENTIST,Khobar,Entry,4,Elm,11420,2024-03-26
+18,Data Engineer,Riyadh,Entry,2,Aramco,10592,2023-10-29
+19,Data Analyst,Riyadh,SENIOR,4,Elm,22466,2024-12-05
+20,data scientist,Riyadh,entry,2,Mobily,12916,2018-08-07
+21,ML Engineer,Khobar,Executive,1,aramco,42794,2022-12-22
+22,Product Manager,Riyadh,Senior,1,SABIC,23500,2021-06-13
+23,Machine Learning Engineer,Jeddah,mid-level,5,STC,14695,2020-05-18
+24,data scientist,Jeddah,Executive,5,Alrajhi Bank,43360,2021-04-24
+25,Product Manager,Medina,SENIOR,5,aramco,24773,2023-04-05
+26,software engineer ,Jeddah,Mid,7,Zain,17578,2019-03-26
+27,Software Engineer,Jeddah,SENIOR,4,Almarai,28396,2021-05-13
+28,Machine Learning Engineer,Riyadh,SENIOR,8,Zain,25627,2023-03-26
+29,ML Engineer,Riyadh,Senior,4,Almarai,28310,2024-01-22
+30,Product Manager,Dammam,Mid,6,Alrajhi Bank,16493,2019-11-10
+31,Data Analyst,Medina,SENIOR,12,Almarai,28331,2019-07-15
+32,DATA SCIENTIST,Medina,Entry Level,2,Aramco,8242,2022-09-02
+33,DATA SCIENTIST,Riyadh,Entry,7,Almarai,8202,2018-10-26
+34,DATA SCIENTIST,Riyadh,entry,3,Alrajhi Bank,7612,2022-02-19
+35,Data Analyst,Jeddah,Senior,4,Zain,24675,2021-04-05
+36,Data Engineer,Riyadh,Mid,3,Aramco,17581,2023-11-17
+37,Product Manager,Riyadh,Entry Level,7,Sabic ,10116,2018-09-16
+38,Software Engineer,Dammam,entry,5,Elm,6981,2018-01-05
+39,data scientist,Riyadh,Executive,0,Tamimi,39558,2019-06-20
+40,data scientist,Makkah,mid-level,12,Tamimi,17611,2019-06-26
+41,Product Manager,Riyadh,Senior,4,Zain,23899,2021-04-26
+42,ML Engineer,Riyadh,mid-level,1,NEOM,14027,2022-01-09
+43,Data Scientist,Jeddah,entry,7,NEOM,6282,2020-05-26
+44,Machine Learning Engineer,Dammam,entry,6,Mobily,14435,2022-09-17
+45,DATA SCIENTIST,Riyadh,Entry Level,2,Zain,6685,2024-10-20
+46,Data Analyst,Riyadh,Entry Level,1,Zain,10311,2024-01-24
+47,Product Manager,Jeddah,Senior,10,aramco,29989,2024-02-09
+48,Business Analyst,Riyadh,entry,6,Tamimi,10915,2022-08-05
+49,Business Analyst,Khobar,entry,5,NEOM,12892,2021-07-21
+50,Data Engineer,Khobar,SENIOR,12,SABIC,29385,2022-01-10
+51,Data Scientist,Medina,Senior,7,Mobily,29555,2018-07-30
+52,data scientist,Riyadh,Mid,8,Mobily,18668,2019-04-28
+53,Business Analyst,Riyadh,Executive,0,Mobily,37600,2022-05-17
+54,Software Engineer,Riyadh,mid-level,0,Sabic ,17504,2023-11-18
+55,Business Analyst,Dammam,entry,8,Zain,14237,2021-05-12
+56,Business Analyst,Jeddah,Entry,15,STC,7391,2018-09-05
+57,Data Scientist,Jeddah,Executive,3,NEOM,39041,2022-02-04
+58,software engineer ,Riyadh,Executive,0,Sabic ,44161,2021-12-11
+59,Product Manager,Riyadh,Executive,1,Alrajhi Bank,43231,2023-02-04
+60,data scientist,Jeddah,Mid,7,Elm,17051,2022-07-01
+61,Business Analyst,Riyadh,SENIOR,6,Zain,28235,2021-10-29
+62,Business Analyst,Dammam,Entry Level,1,Aramco,12831,2021-06-13
+63,Data Engineer,Khobar,Entry Level,4,Mobily,8461,2021-06-04
+64,Software Engineer,Riyadh,mid-level,1,SABIC,13363,2022-04-23
+65,Software Engineer,Jeddah,SENIOR,4,SABIC,23585,2019-03-06
+66,Data Analyst,Riyadh,Executive,1,Almarai,44581,2021-12-22
+67,Software Engineer,Riyadh,Executive,10,Mobily,44073,2020-06-01
+68,DATA SCIENTIST,Makkah,Entry,8,Alrajhi Bank,7278,2019-05-16
+69,ML Engineer,Riyadh,Entry Level,5,STC,6722,2018-09-23
+70,Product Manager,Dammam,entry,3,aramco,0,2024-04-18
+71,data scientist,Khobar,Entry,8,Tamimi,7062,2020-12-09
+72,software engineer ,Riyadh,Entry Level,5,Zain,11776,2020-12-18
+73,software engineer ,Riyadh,SENIOR,12,Almarai,29643,2021-12-19
+74,Data Scientist ,Riyadh,Entry,3,aramco,8772,2020-08-11
+75,Data Scientist ,Makkah,entry,15,Tamimi,16426,2024-07-18
+76,data scientist,Medina,entry,6,Elm,17864,2019-08-23
+77,Data Engineer,Riyadh,Executive,8,STC,42191,2022-01-21
+78,Data Scientist ,Jeddah,Entry Level,7,NEOM,10068,2021-01-25
+79,Data Engineer,Jeddah,entry,3,Elm,12860,2018-01-27
+80,data scientist,Jeddah,Executive,5,NEOM,44629,2018-11-01
+81,data scientist,Khobar,SENIOR,8,NEOM,29515,2020-03-26
+82,Business Analyst,Makkah,mid-level,12,SABIC,18184,2019-03-20
+83,Data Scientist,Dammam,mid-level,5,Alrajhi Bank,17618,2018-08-03
+84,Data Analyst,Khobar,Entry,3,Aramco,12215,2019-07-17
+85,Data Analyst,Riyadh,Executive,7,Tamimi,42147,2019-10-10
+86,Product Manager,Khobar,Senior,10,Aramco,26859,2023-07-28
+87,Data Scientist ,Riyadh,mid-level,3,Zain,18938,2023-04-06
+88,ML Engineer,Riyadh,Entry,15,Elm,11545,2018-04-16
+89,Business Analyst,Jeddah,mid-level,5,NEOM,19230,2024-09-07
+90,DATA SCIENTIST,Medina,Senior,3,STC,23021,2022-09-01
+91,Data Scientist,Riyadh,entry,15,Tamimi,15943,2023-07-04
+92,Data Scientist,Jeddah,mid-level,5,Aramco,16191,2021-07-16
+93,Data Scientist ,Dammam,entry,2,Aramco,9875,2018-07-23
+94,DATA SCIENTIST,Riyadh,mid-level,10,Aramco,17496,2022-12-12
+95,Data Engineer,Makkah,Senior,4,SABIC,29208,2021-04-23
+96,ML Engineer,Khobar,Senior,15,aramco,28265,2021-08-21
+97,Data Engineer,Khobar,entry,4,Mobily,18019,2020-02-22
+98,Data Scientist,Dammam,Senior,3,SABIC,22502,2023-06-15
+99,Business Analyst,Riyadh,mid-level,5,SABIC,14747,2018-04-12
+100,Product Manager,Riyadh,Mid,7,aramco,17991,2024-07-01
+101,Data Engineer,Riyadh,entry,2,Elm,6663,2022-10-07
+102,software engineer ,Riyadh,Entry Level,5,Mobily,9488,2023-08-22
+103,Data Engineer,Medina,SENIOR,5,STC,29869,2023-02-15
+104,software engineer ,Riyadh,Executive,15,Elm,42892,2021-04-07
+105,Data Scientist,Riyadh,mid-level,5,Elm,12189,2021-02-17
+106,DATA SCIENTIST,Riyadh,entry,6,Sabic ,0,2018-11-05
+107,software engineer ,Riyadh,Executive,12,Elm,38016,2018-06-01
+108,DATA SCIENTIST,Riyadh,Entry,5,Tamimi,12035,2019-07-23
+109,Machine Learning Engineer,Riyadh,Entry Level,5,Almarai,10739,2021-07-31
+110,Software Engineer,Makkah,SENIOR,5,STC,23528,2020-07-09
+111,Data Engineer,Jeddah,entry,4,Sabic ,19526,2024-07-31
+112,Software Engineer,Dammam,entry,7,Aramco,9598,2022-04-07
+113,Data Scientist ,Makkah,Senior,5,Alrajhi Bank,29099,2023-03-20
+114,data scientist,Jeddah,SENIOR,6,Sabic ,22492,2024-01-19
+115,Business Analyst,Medina,Mid,12,SABIC,15060,2024-10-14
+116,Business Analyst,Riyadh,Entry,12,Mobily,9891,2021-05-22
+117,Machine Learning Engineer,Jeddah,Entry Level,5,aramco,8092,2021-12-26
+118,Business Analyst,Riyadh,Senior,2,Aramco,28278,2021-06-19
+119,software engineer ,Medina,Executive,6,Alrajhi Bank,40645,2022-07-18
+120,Data Scientist,Dammam,SENIOR,1,aramco,29392,2018-04-20
+121,software engineer ,Riyadh,entry,12,Zain,11242,2020-05-03
+122,Business Analyst,Khobar,Entry,1,Aramco,12603,2024-10-01
+123,Data Analyst,Riyadh,Entry Level,12,Elm,10334,2019-07-26
+124,Machine Learning Engineer,Riyadh,Entry Level,7,Almarai,9551,2020-02-20
+125,Data Scientist,Khobar,Entry,8,Alrajhi Bank,6529,2021-03-28
+126,DATA SCIENTIST,Jeddah,Mid,0,Tamimi,12206,2024-03-21
+127,Data Scientist ,Riyadh,entry,8,Almarai,16029,2023-05-14
+128,Product Manager,Jeddah,entry,12,Alrajhi Bank,10734,2020-09-29
+129,data scientist,Dammam,entry,12,Zain,8840,2024-10-04
+130,Machine Learning Engineer,Riyadh,Executive,3,Sabic ,38306,2023-04-16
+131,software engineer ,Riyadh,Entry Level,1,STC,8561,2019-01-31
+132,Data Analyst,Makkah,mid-level,4,Sabic ,19476,2022-03-10
+133,DATA SCIENTIST,Medina,entry,5,SABIC,15302,2022-05-29
+134,Product Manager,Jeddah,Senior,0,Alrajhi Bank,23570,2021-06-25
+135,Data Engineer,Riyadh,entry,12,Almarai,11863,2019-01-06
+136,Data Engineer,Riyadh,Entry Level,7,Tamimi,6981,2022-05-30
+137,Data Analyst,Riyadh,SENIOR,15,Alrajhi Bank,29965,2019-10-15
+138,Machine Learning Engineer,Riyadh,Executive,3,Sabic ,38306,2023-04-16
+139,Machine Learning Engineer,Riyadh,entry,5,Elm,10486,2022-11-19
+140,data scientist,Dammam,Senior,7,Tamimi,28374,2019-11-14
+141,Data Analyst,Jeddah,SENIOR,0,Aramco,27450,2023-12-04
+142,Data Analyst,Jeddah,entry,4,SABIC,18413,2023-06-09
+143,ML Engineer,Medina,Entry,0,STC,6484,2019-09-05
+144,Data Analyst,Riyadh,Entry,8,NEOM,8157,2024-03-09
+145,data scientist,Khobar,entry,10,Elm,12574,2021-08-08
+146,DATA SCIENTIST,Riyadh,mid-level,5,NEOM,14556,2024-07-09
+147,Business Analyst,Jeddah,entry,5,aramco,5064,2021-05-22
+148,Product Manager,Makkah,Senior,12,SABIC,23597,2019-01-18
+149,software engineer ,Riyadh,SENIOR,1,Tamimi,23757,2022-06-27
+150,software engineer ,Riyadh,Mid,4,NEOM,13028,2018-12-14
+151,Data Scientist ,Makkah,mid-level,6,Elm,17959,2022-02-24
+152,software engineer ,Riyadh,Entry,10,Mobily,9843,2018-10-28
+153,ML Engineer,Riyadh,entry,7,Elm,8073,2018-08-08
+154,ML Engineer,Medina,entry,5,Elm,18164,2019-10-14
+155,Product Manager,Riyadh,Entry,4,Sabic ,12270,2019-02-24
+156,Data Analyst,Jeddah,mid-level,7,Zain,14433,2021-02-14
+157,ML Engineer,Riyadh,Entry Level,4,Sabic ,9798,2023-08-12
+158,software engineer ,Medina,Entry Level,2,Zain,11756,2021-11-07
+159,Data Engineer,Riyadh,Entry Level,7,Tamimi,6981,2022-05-30
+160,DATA SCIENTIST,Khobar,entry,5,Aramco,14729,2021-05-30
+161,Software Engineer,Riyadh,Mid,8,NEOM,15314,2020-04-03
+162,data scientist,Makkah,entry,5,Zain,14790,2022-05-19
+163,software engineer ,Riyadh,Mid,10,SABIC,12200,2018-05-06
+164,Software Engineer,Riyadh,Mid,4,Zain,17258,2018-04-16
+165,Product Manager,Jeddah,entry,3,Alrajhi Bank,14919,2019-10-24
+166,Machine Learning Engineer,Riyadh,mid-level,15,Sabic ,15556,2020-09-26
+167,Data Engineer,Makkah,SENIOR,6,STC,24454,2023-02-27
+168,Data Scientist ,Makkah,entry,1,Tamimi,10134,2023-10-04
+169,Data Analyst,Riyadh,Mid,4,STC,18910,2024-01-20
+170,ML Engineer,Medina,entry,0,Sabic ,19906,2024-05-30
+171,Machine Learning Engineer,Medina,entry,7,Tamimi,18432,2019-02-11
+172,Business Analyst,Riyadh,mid-level,12,Mobily,13076,2018-02-08
+173,Data Engineer,Riyadh,Senior,3,Tamimi,23267,2024-10-20
+174,Software Engineer,Khobar,Mid,0,Mobily,15171,2020-01-02
+175,Business Analyst,Riyadh,Entry,0,STC,7693,2020-05-13
+176,Data Analyst,Riyadh,entry,15,Alrajhi Bank,5563,2021-12-14
+177,Product Manager,Riyadh,entry,12,aramco,6678,2019-10-18
+178,data scientist,Jeddah,SENIOR,15,STC,25152,2020-01-29
+179,ML Engineer,Makkah,mid-level,0,Alrajhi Bank,12391,2018-05-08
+180,Software Engineer,Riyadh,mid-level,15,Tamimi,15843,2023-02-03
+181,Product Manager,Khobar,Senior,5,Mobily,25993,2022-04-25
+182,Data Scientist,Makkah,mid-level,7,STC,12646,2023-12-16
+183,ML Engineer,Jeddah,Entry Level,10,Alrajhi Bank,12595,2023-07-18
+184,,Riyadh,entry,5,,0,
+185,Data Engineer,Makkah,mid-level,3,Mobily,14363,2018-04-29
+186,Product Manager,Riyadh,Entry,5,Tamimi,0,2022-02-03
+187,ML Engineer,Riyadh,Entry Level,3,aramco,11975,2019-11-27
+188,Data Scientist,Jeddah,entry,15,STC,5130,2023-12-22
+189,Machine Learning Engineer,Makkah,SENIOR,15,NEOM,28349,2020-10-26
+190,Machine Learning Engineer,Medina,Entry,12,STC,5241,2023-03-07
+191,Machine Learning Engineer,Riyadh,SENIOR,15,aramco,27463,2019-09-25
+192,Product Manager,Riyadh,entry,3,Elm,8890,2023-10-23
+193,Business Analyst,Medina,Entry,1,Alrajhi Bank,9117,2024-04-05
+194,Data Scientist ,Dammam,mid-level,12,aramco,13082,2020-10-25
+195,Product Manager,Riyadh,Entry Level,6,Alrajhi Bank,0,2022-02-26
+196,Machine Learning Engineer,Jeddah,entry,15,Alrajhi Bank,6363,2021-05-20
+197,Machine Learning Engineer,Medina,Entry,2,Alrajhi Bank,9636,2022-03-04
+198,Machine Learning Engineer,Riyadh,Entry,12,aramco,11949,2021-10-21
+199,Data Scientist,Riyadh,Entry Level,5,Zain,9555,2023-09-12
+200,Data Engineer,Riyadh,SENIOR,8,Alrajhi Bank,24047,2018-06-21
+201,DATA SCIENTIST,Makkah,entry,0,SABIC,10225,2024-08-29
+202,Data Engineer,Riyadh,entry,1,Almarai,12775,2023-06-25
+203,Machine Learning Engineer,Riyadh,mid-level,5,Mobily,17977,2022-12-06
+204,data scientist,Jeddah,entry,1,Mobily,8342,2021-10-04
+205,Data Scientist ,Riyadh,Senior,6,aramco,0,2018-12-27
+206,Data Scientist,Khobar,SENIOR,15,aramco,22870,2024-05-11
+207,Product Manager,Riyadh,Entry,3,Aramco,12513,2019-09-17
+208,Data Scientist ,Riyadh,Executive,2,aramco,43439,2020-12-21
+209,Product Manager,Riyadh,entry,5,Sabic ,16474,2020-07-24
+210,Data Scientist ,Khobar,entry,15,STC,18736,2022-01-22
+211,Machine Learning Engineer,Makkah,Entry Level,4,Zain,7038,2019-05-02
+212,Product Manager,Khobar,Senior,10,Aramco,26859,2023-07-28
+213,software engineer ,Dammam,Senior,6,Elm,24690,2018-03-08
+214,data scientist,Riyadh,Entry,4,Aramco,7568,2020-08-19
+215,ML Engineer,Riyadh,Entry,5,NEOM,10056,2019-01-05
+216,Software Engineer,Riyadh,entry,8,Sabic ,5474,2024-10-13
+217,Product Manager,Makkah,Executive,5,aramco,44101,2018-04-24
+218,software engineer ,Riyadh,Entry,5,Sabic ,11892,2022-11-17
+219,Business Analyst,Riyadh,Entry,12,Mobily,9891,2021-05-22
+220,Software Engineer,Riyadh,Executive,10,Mobily,44073,2020-06-01
+221,data scientist,Riyadh,entry,5,SABIC,10276,2022-06-16
+222,Software Engineer,Riyadh,Senior,1,Aramco,24734,2021-07-08
+223,Machine Learning Engineer,Dammam,Mid,15,Mobily,18628,2023-10-28
+224,Data Engineer,Makkah,mid-level,6,NEOM,16658,2021-09-14
+225,Data Scientist ,Medina,Senior,5,NEOM,23478,2018-12-21
+226,data scientist,Jeddah,mid-level,1,Tamimi,19858,2023-02-16
+227,Data Scientist,Medina,Senior,7,Mobily,29555,2018-07-30
+228,Data Scientist,Jeddah,SENIOR,6,NEOM,22337,2022-08-15
+229,data scientist,Medina,Mid,5,Zain,13059,2021-02-15
+230,data scientist,Khobar,entry,5,NEOM,10226,2018-06-27
+231,Data Scientist,Riyadh,Executive,4,NEOM,44408,2018-04-10
+232,Data Scientist ,Dammam,Executive,5,aramco,37975,2019-03-19
+233,Machine Learning Engineer,Riyadh,SENIOR,10,Almarai,22863,2018-12-17
+234,Data Analyst,Riyadh,Senior,10,Sabic ,23955,2019-02-16
+235,software engineer ,Riyadh,Executive,2,Sabic ,39061,2023-12-28
+236,Business Analyst,Riyadh,Executive,0,Mobily,37600,2022-05-17
+237,Data Engineer,Jeddah,entry,4,Sabic ,19526,2024-07-31
+238,DATA SCIENTIST,Riyadh,Entry,7,Almarai,8202,2018-10-26
+239,DATA SCIENTIST,Riyadh,entry,5,aramco,8385,2024-05-22
+240,Machine Learning Engineer,Makkah,Entry Level,4,Zain,7038,2019-05-02
+241,Data Engineer,Jeddah,entry,12,Aramco,19728,2019-03-01
+242,Data Engineer,Riyadh,Entry Level,2,Tamimi,10675,2023-07-08
+243,Business Analyst,Makkah,entry,10,Elm,8005,2022-11-22
+244,Machine Learning Engineer,Riyadh,mid-level,5,Zain,12995,2022-12-16
+245,software engineer ,Riyadh,Mid,1,Almarai,14731,2019-12-12
+246,data scientist,Khobar,entry,5,NEOM,10226,2018-06-27
+247,Data Analyst,Riyadh,Entry,5,aramco,11873,2019-12-19
+248,data scientist,Riyadh,entry,12,Aramco,19742,2019-12-08
+249,software engineer ,Riyadh,Entry Level,5,Sabic ,10847,2019-03-10
+250,Data Engineer,Jeddah,Mid,1,NEOM,14904,2019-10-09
+251,Data Engineer,Medina,SENIOR,5,STC,29869,2023-02-15
+252,Software Engineer,Riyadh,entry,1,SABIC,16887,2024-03-08
+253,data scientist,Dammam,Mid,2,STC,16514,2024-07-25
+254,DATA SCIENTIST,Dammam,entry,7,Mobily,7625,2024-03-08
+255,DATA SCIENTIST,Jeddah,Senior,0,Almarai,23184,2018-07-09
+256,ML Engineer,Jeddah,mid-level,4,aramco,14888,2020-06-09
+257,Data Scientist,Riyadh,mid-level,5,Almarai,13806,2020-07-21
+258,Software Engineer,Riyadh,mid-level,4,Alrajhi Bank,17279,2019-07-10
+259,DATA SCIENTIST,Jeddah,Mid,0,Tamimi,12206,2024-03-21
+260,Business Analyst,Riyadh,mid-level,3,aramco,14613,2019-10-06
+261,software engineer ,Khobar,entry,12,Tamimi,8104,2021-06-17
+262,Business Analyst,Medina,entry,4,SABIC,12041,2021-07-01
+263,Data Engineer,Riyadh,entry,3,Almarai,5769,2024-08-06
+264,Machine Learning Engineer,Jeddah,entry,0,Mobily,7824,2021-12-04
+265,Data Engineer,Riyadh,entry,8,aramco,8444,2021-10-25
+266,Machine Learning Engineer,Medina,Executive,1,Zain,37804,2021-10-22
