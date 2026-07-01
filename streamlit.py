@@ -11,7 +11,7 @@ st.markdown("قم برفع ملف الإكسل الخاص بك واستمتع ب
 
 # 1. شريط جانبي لرفع الملف والفلاتر
 st.sidebar.header("📁 مدخلات البيانات والفلاتر")
-uploaded_file = st.sidebar.file_uploader("اختر ملف إكسل (Excel)", type=["xlsx", "xls"])
+uploaded_file = st.sidebar.file_uploader("اختر ملف إكسل (Excel)", type=["xlsx", "csv"])
 
 if uploaded_file is not None:
     # قراءة البيانات
