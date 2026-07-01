@@ -99,11 +99,28 @@ if uploaded_file is not None:
         st.subheader("🎯 التوزيع الجغرافي للمدن (بعد التوحيد)")
         if 'City' in df.columns and not df.empty:
             city_counts = df['City'].value_counts()
-            
-            # رسم المخطط بشكل نظيف
-            fig, ax = plt.subplots(figsize=(6, 6))
-            ax.pie(city_counts, labels=city_counts.index, autopct='%1.1f%%', colors=['#87CEEB', '#FFC0CB'])
-            ax.set_title("توزيع البيانات حسب المدينة")
+         # تأكدي من استيراد المكتبة في أعلى الملف: import plotly.express as px
+
+st.subheader("🎯 التوزيع الجغرافي للمدن بألوان فريدة")
+if 'City' in df.columns and not df.empty:
+    # 1. تجهيز تكرارات المدن
+    city_counts = df['City'].value_counts().reset_index()
+    city_counts.columns = ['City', 'Count']
+    
+    # 2. إنشاء المخطط الذكي متعدد الألوان تلقائياً
+    fig = px.pie(city_counts, 
+                 values='Count', 
+                 names='City', 
+                 hole=0.3, # يجعله دونات أنيق وعصري
+                 color='City', # السحر هنا: هذا السطر يعطي كل مدينة لوناً فريداً وخاصاً بها
+                 color_discrete_sequence=px.colors.qualitative.Set3) # مجموعة ألوان مبهجة ومتنوعة لكل المدن
+
+    fig.update_traces(textposition='inside', textinfo='percent+label')
+
+    # 3. عرض المخطط التفاعلي الجديد في ستريم ليت
+    st.plotly_chart(fig, use_container_width=True)
+else:
+    st.warning("لا توجد بيانات كافية لعرض المخطط البياني.")
             
             # تمرير الرسمة لـ Streamlit
             st.pyplot(fig)
