@@ -3,8 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-# سحب المشروع داخل كولاب
-!git clone https://{TOKEN}@github.com{USERNAME}/{REPO_NAME}.git
+
 
 # إعدادات الصفحة العامة لجعل المظهر مريحاً واحترافياً
 st.set_page_config(page_title="لوحة تحليل البيانات الإبداعية", layout="wide")
