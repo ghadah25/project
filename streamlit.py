@@ -15,17 +15,15 @@ uploaded_file = st.sidebar.file_uploader("اختر ملف إكسل (Excel)", typ
 
 if uploaded_file is not None:
     # قراءة البيانات
-    if uploaded_file is not None:
-    # محاولة ذكية لقراءة الملف بغض النظر عن طريقة تسميته
+  if uploaded_file is not None:
+    # يجب أن تكون هناك مسافة بادئة (Tab) قبل كلمة try لتصبح داخل الـ if
     try:
-        # المحاولة الأولى: قراءته كملف إكسل
         df = pd.read_excel(uploaded_file)
     except Exception:
-        # إذا فشل (بسبب أنه في الأصل CSV)، نقوم بإعادة المؤشر للبداية وقراءته كـ CSV
         uploaded_file.seek(0)
         df = pd.read_csv(uploaded_file)
     
-    # --- هنا تكملة باقي كود التنظيف الخاص بكِ بدون تغيير ---
+    # باقي كود التنظيف يستمر بنفس مستوى المسافة بالداخل...
     if 'City' in df.columns:
         df['City'] = df['City'].astype(str).str.strip().str.capitalize()
     # ... إلخ
