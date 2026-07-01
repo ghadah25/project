@@ -1,27 +1,30 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-# استيراد مكتبة Plotly للرسم التفاعلي متعدد الألوان
 import plotly.express as px
+import os
 
 # إعدادات الصفحة العامة لجعل المظهر مريحاً واحترافياً
 st.set_page_config(page_title="لوحة تحليل البيانات الإبداعية", layout="wide")
 
 st.title("📊 لوحة تحكم وتحليل البيانات التفاعلية")
-st.markdown("قم برفع ملف الإكسل الخاص بك واستمتع بالتحليلات الفورية والتنظيف التلقائي للبيانات!")
+st.markdown("استمتع بالتحليلات الفورية والتنظيف التلقائي للبيانات المستدعاة مباشرة من المشروع!")
 
-# 1. شريط جانبي لرفع الملف والفلاتر
-st.sidebar.header("📁 مدخلات البيانات والفلاتر")
-uploaded_file = st.sidebar.file_uploader("اختر ملف إكسل أو CSV", type=["xlsx", "csv"])
+# اسم ملف البيانات الموجود لديكِ في نفس المجلد (تأكدي من كتابة الاسم والامتداد الصحيح هنا)
+# يمكنكِ تغيير 'data.xlsx' لاسم ملفكِ الحقيقي مثل 'data.csv' أو أي اسم آخر
+DATA_FILE = 'data.xlsx' 
 
-if uploaded_file is not None:
-    # محاولة ذكية لقراءة الملف سواء كان Excel أو CSV
-    try:
-        df = pd.read_excel(uploaded_file)
-    except Exception:
-        uploaded_file.seek(0)
-        df = pd.read_csv(uploaded_file)
-    
+# محاولة ذكية لقراءة الملف مباشرة من المستودع بناءً على صيغته
+try:
+    if not os.path.exists(DATA_FILE):
+        # إذا لم يجد ملف الـ Excel، نجرب البحث عن نسخة الـ CSV تلقائياً
+        DATA_FILE = DATA_FILE.replace('.xlsx', '.csv')
+        
+    if DATA_FILE.endswith('.csv'):
+        df = pd.read_csv(DATA_FILE)
+    else:
+        df = pd.read_excel(DATA_FILE)
+        
     # --- خطوة التنظيف التلقائي والإبداعي خلف الكواليس ---
     
     # أ: توحيد أسماء المدن تلقائياً (إزالة المسافات وتوحيد حالة الأحرف لتندمج التكرارات)
@@ -51,7 +54,7 @@ if uploaded_file is not None:
 
 
     # --- إضافة الفلاتر التفاعلية في الشريط الجانبي ---
-    st.sidebar.subheader("🔍 تصفية وفلترة البيانات")
+    st.sidebar.header("🔍 تصفية وفلترة البيانات")
     
     # فلتر المدن الموحدة
     if 'City' in df.columns:
@@ -101,7 +104,7 @@ if uploaded_file is not None:
                          names='City', 
                          hole=0.3, 
                          color='City', 
-                         color_discrete_sequence=px.colors.qualitative.Set3) # ألوان مبهجة ومختلفة لكل مدينة
+                         color_discrete_sequence=px.colors.qualitative.Set3) # كل مدينة بلون فريد تلقائياً
 
             fig.update_traces(textposition='inside', textinfo='percent+label')
 
@@ -110,6 +113,5 @@ if uploaded_file is not None:
         else:
             st.warning("لا توجد بيانات كافية لعرض المخطط البياني.")
 
-else:
-    # رسالة تظهر للمستخدم تطلب منه رفع الملف أولاً
-    st.info("💡 بانتظار رفع ملف البيانات من الشريط الجانبي لبدء السحر والتحليل!")
+except Exception as e:
+    st.error(f"❌ لم يتم العثور على ملف البيانات أو حدث خطأ أثناء القراءة. تأكدي من تسمية الملف بشكل صحيح في الكود. تفاصيل الخطأ: {e}")
