@@ -1,9 +1,8 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 import numpy as np
-
-
+# استيراد مكتبة Plotly للرسم التفاعلي متعدد الألوان
+import plotly.express as px
 
 # إعدادات الصفحة العامة لجعل المظهر مريحاً واحترافياً
 st.set_page_config(page_title="لوحة تحليل البيانات الإبداعية", layout="wide")
@@ -13,25 +12,19 @@ st.markdown("قم برفع ملف الإكسل الخاص بك واستمتع ب
 
 # 1. شريط جانبي لرفع الملف والفلاتر
 st.sidebar.header("📁 مدخلات البيانات والفلاتر")
-uploaded_file = st.sidebar.file_uploader("اختر ملف إكسل (Excel)", type=["xlsx", "csv"])
+uploaded_file = st.sidebar.file_uploader("اختر ملف إكسل أو CSV", type=["xlsx", "csv"])
 
 if uploaded_file is not None:
-    # قراءة البيانات
-  if uploaded_file is not None:
-    # يجب أن تكون هناك مسافة بادئة (Tab) قبل كلمة try لتصبح داخل الـ if
+    # محاولة ذكية لقراءة الملف سواء كان Excel أو CSV
     try:
         df = pd.read_excel(uploaded_file)
     except Exception:
         uploaded_file.seek(0)
         df = pd.read_csv(uploaded_file)
     
-    # باقي كود التنظيف يستمر بنفس مستوى المسافة بالداخل...
-    if 'City' in df.columns:
-        df['City'] = df['City'].astype(str).str.strip().str.capitalize()
-    # ... إلخ
-    
     # --- خطوة التنظيف التلقائي والإبداعي خلف الكواليس ---
-    # أ: توحيد أسماء المدن تلقائياً (إزالة المسافات وتوحيد حالة الأحرف)
+    
+    # أ: توحيد أسماء المدن تلقائياً (إزالة المسافات وتوحيد حالة الأحرف لتندمج التكرارات)
     if 'City' in df.columns:
         df['City'] = df['City'].astype(str).str.strip().str.capitalize()
         
@@ -75,7 +68,7 @@ if uploaded_file is not None:
 
     # --- عرض النتائج والتحليلات في الصفحة الرئيسية ---
     
-    # تصميم بطاقات ذكية للأرقام القياسية (KPIs) لتعطي لمسة إبداعية
+    # تصميم بطاقات ذكية للأرقام القياسية (KPIs)
     col1, col2, col3 = st.columns(3)
     with col1:
         st.metric("إجمالي السجلات المفلترة", len(df))
@@ -88,45 +81,35 @@ if uploaded_file is not None:
 
     st.markdown("---")
 
-    # تقسيم الصفحة إلى جزأين لعرض الجدول بجانب الرسم البياني
-    main_col1, main_col2 = st.columns([1, 1])
+    # تقسيم الصفحة إلى جزأين متناسقين لعرض الجدول بجانب الرسم البياني
+    main_col1, main_col2 = st.columns([1, 1.2])
 
     with main_col1:
         st.subheader("📋 نظرة على البيانات المنظّفة والمنقحة")
         st.dataframe(df, use_container_width=True)
 
     with main_col2:
-        st.subheader("🎯 التوزيع الجغرافي للمدن (بعد التوحيد)")
+        st.subheader("🎯 التوزيع الجغرافي للمدن بألوان فريدة")
         if 'City' in df.columns and not df.empty:
-            city_counts = df['City'].value_counts()
-         # تأكدي من استيراد المكتبة في أعلى الملف: import plotly.express as px
-
-st.subheader("🎯 التوزيع الجغرافي للمدن بألوان فريدة")
-if 'City' in df.columns and not df.empty:
-    # 1. تجهيز تكرارات المدن
-    city_counts = df['City'].value_counts().reset_index()
-    city_counts.columns = ['City', 'Count']
-    
-    # 2. إنشاء المخطط الذكي متعدد الألوان تلقائياً
-    fig = px.pie(city_counts, 
-                 values='Count', 
-                 names='City', 
-                 hole=0.3, # يجعله دونات أنيق وعصري
-                 color='City', # السحر هنا: هذا السطر يعطي كل مدينة لوناً فريداً وخاصاً بها
-                 color_discrete_sequence=px.colors.qualitative.Set3) # مجموعة ألوان مبهجة ومتنوعة لكل المدن
-
-    fig.update_traces(textposition='inside', textinfo='percent+label')
-
-    # 3. عرض المخطط التفاعلي الجديد في ستريم ليت
-    st.plotly_chart(fig, use_container_width=True)
-else:
-    st.warning("لا توجد بيانات كافية لعرض المخطط البياني.")
+            # 1. تجهيز تكرارات المدن لتناسب Plotly
+            city_counts = df['City'].value_counts().reset_index()
+            city_counts.columns = ['City', 'Count']
             
-            # تمرير الرسمة لـ Streamlit
-            st.pyplot(fig)
+            # 2. إنشاء المخطط الذكي متعدد الألوان تلقائياً (دونات أنيق)
+            fig = px.pie(city_counts, 
+                         values='Count', 
+                         names='City', 
+                         hole=0.3, 
+                         color='City', 
+                         color_discrete_sequence=px.colors.qualitative.Set3) # ألوان مبهجة ومختلفة لكل مدينة
+
+            fig.update_traces(textposition='inside', textinfo='percent+label')
+
+            # 3. عرض المخطط التفاعلي الجديد في ستريم ليت
+            st.plotly_chart(fig, use_container_width=True)
         else:
             st.warning("لا توجد بيانات كافية لعرض المخطط البياني.")
 
 else:
     # رسالة تظهر للمستخدم تطلب منه رفع الملف أولاً
-    st.info("💡 بانتظار رفع ملف الإكسل من الشريط الجانبي لبدء السحر والتحليل!")
+    st.info("💡 بانتظار رفع ملف البيانات من الشريط الجانبي لبدء السحر والتحليل!")
